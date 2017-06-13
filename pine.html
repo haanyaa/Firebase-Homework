@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="pine.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <title> Employee Data Management</title>
+</head>
+<body>
+ <div class="container text-center">
+     <div class="jumbotron tree">
+         <h2> Anytime is Train Time </h2>
+         <p> Choo Choo,Chee Chee </p>
+     </div>
+ </div>
+
+ <div class="container">
+    <div class="panel panel-default panel panel-danger">
+		<!-- Default panel contents -->
+		<div class="panel-heading">Current Employees</div>
+		
+		<!-- Table -->
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Train Name</th>
+					<th>Destination</th>
+					<th>Frequency (min)</th>
+					<th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                    
+				</tr>
+			</thead>
+		<tbody id="newTrains">
+
+        </tbody>
+		</table>
+	</div>
+</div>
+
+
+
+
+
+
+<div class="container">
+    <div class="panel panel-default panel panel-danger">
+		<!-- Default panel contents -->
+		<div class="panel-heading">Add Train</div>
+		   <div class="panel-body">
+                       <form>
+
+  <div class="form-group">
+    <label for="email">  Train Name </label>
+    <input type="text" class="form-control" id="train-name">
+  </div>
+  <div class="form-group">
+    <label for="text">Destination</label>
+    <input type="text" class="form-control" id="destination">
+  </div>
+
+   <div class="form-group">
+    <label for="text">First Train Time (HH:ss - military time)</label>
+    <input type="time" class="form-control" id="traintime">
+  </div>
+
+   <div class="form-group">
+    <label for="text">Frequency (min)</label>
+    <input type="number" class="form-control" id="frequency">
+  </div>
+  
+  <button type="submit" class="btn btn-default btn-danger" id="submit">Submit</button>
+          <form>
+
+
+    </div>
+</div>
+
+</div>
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Moment.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<script src="pine.js"></script>
+
+
+</body>
+</html>
